@@ -1,4 +1,6 @@
 package com.liveverse.realtime.chat.dto;
 
-public record ChatHistoryBatch() {
+import java.util.List;
+
+public record ChatHistoryBatch(List<ChatEvent> messages) {
 }

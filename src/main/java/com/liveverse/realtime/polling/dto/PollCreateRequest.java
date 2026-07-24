@@ -1,4 +1,7 @@
 package com.liveverse.realtime.polling.dto;
 
-public record PollCreateRequest() {
+import java.util.List;
+
+public record PollCreateRequest(String title,
+                                List<String> options) {
 }

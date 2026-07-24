@@ -1,4 +1,9 @@
 package com.liveverse.realtime.polling.dto;
 
-public record PollEvent() {
+import java.util.List;
+
+public record PollEvent(Long pollId,
+                        String title,
+                        String status,
+                        List<PollOptionTally> options) {
 }

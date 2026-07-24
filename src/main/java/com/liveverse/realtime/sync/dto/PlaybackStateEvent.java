@@ -1,4 +1,7 @@
 package com.liveverse.realtime.sync.dto;
 
-public record PlaybackStateEvent() {
+import java.time.Instant;
+
+public record PlaybackStateEvent(PlaybackState state,
+                                 Instant changedAt) {
 }

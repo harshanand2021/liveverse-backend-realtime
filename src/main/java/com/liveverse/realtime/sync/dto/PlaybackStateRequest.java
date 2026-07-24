@@ -1,4 +1,4 @@
 package com.liveverse.realtime.sync.dto;
 
-public record PlaybackStateRequest() {
+public record PlaybackStateRequest(PlaybackState state) {
 }

@@ -1,4 +1,4 @@
 package com.liveverse.realtime.polling.dto;
 
-public class PollCloseRequest {
+public record PollCloseRequest(Long pollId) {
 }

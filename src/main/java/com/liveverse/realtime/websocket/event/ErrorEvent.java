@@ -1,4 +1,4 @@
 package com.liveverse.realtime.websocket.event;
 
-public record ErrorEvent() {
+public record ErrorEvent(String message) {
 }
