@@ -1,4 +1,8 @@
 package com.liveverse.realtime.websocket.event;
 
-public record OutboundEvent(EventType eventType, Object payload) {
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+public record OutboundEvent(@JsonProperty("type") EventType eventType,
+                            Object payload) {
+
 }

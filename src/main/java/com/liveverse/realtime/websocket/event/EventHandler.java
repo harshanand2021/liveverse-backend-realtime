@@ -4,5 +4,5 @@ import com.liveverse.realtime.websocket.ParticipantSession;
 
 public interface EventHandler {
     boolean supports(EventType type);
-    void handle(ParticipantSession session, InboundEvent event)
+    void handle(ParticipantSession session, InboundEvent event);
 }
