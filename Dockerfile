@@ -1,8 +1,9 @@
 # Build stage
-FROM gradle:8.5-jdk17 AS builder
+FROM eclipse-temurin:21-jdk as builder
 WORKDIR /app
 COPY . .
-RUN gradle build -x test --no-daemon
+RUN chmod +x ./gradlew
+RUN ./gradlew build -DskipTests -x test
 
 # Runtime stage
 FROM registry.access.redhat.com/ubi9/openjdk-25-runtime:1.24
