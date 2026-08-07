@@ -1,5 +1,8 @@
-*
-!build/*-runner
-!build/*-runner.jar
-!build/lib/*
-!build/quarkus-app/*
+.git
+.gitignore
+target/
+build/
+.gradle
+.idea
+*.iml
+node_modules
